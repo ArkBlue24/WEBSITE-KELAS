@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #222;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background: #111;
+  width: 100%;
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+nav button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: #555;
+}
+
+.page {
+  padding: 80px 20px 20px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.profile img {
+  width: 150px;
+  image-rendering: pixelated;
+}
+
+.students {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.student {
+  width: 100px;
+  text-align: center;
+}
+
+.student img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  image-rendering: pixelated;
+}
